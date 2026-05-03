@@ -1,6 +1,6 @@
-# blockgpt-driver
+# BlockGPT Driver
 
-This repository stores driver installers that BlockGPT Link can download and unpack for local hardware support.
+This repository stores downloadable driver installers used by BlockGPT Link for local hardware support.
 
 ## Current payload
 
@@ -8,7 +8,7 @@ This repository stores driver installers that BlockGPT Link can download and unp
 
 ## Release convention
 
-The current downloader filters release assets by platform and architecture. For macOS, publish release assets named like:
+The downloader filters release assets by platform and architecture. For macOS, publish release assets named like:
 
 - `blockgpt-driver-darwin-arm64.zip`
 - `blockgpt-driver-darwin-x64.zip`
@@ -22,3 +22,7 @@ Both archives can contain the same installer payload if the vendor package is un
 ```
 
 The script writes release archives into `dist/`.
+
+## Product role
+
+This repository supports smoother first-time setup for BlockGPT classroom and maker deployments by separating driver distribution from the main app installer.
